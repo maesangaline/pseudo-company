@@ -3,10 +3,10 @@
 include('header.php');
 
       // Database Information
-        $servername = "52.7.250.96";
-        $username = "web277_sangalinem";
-        $password = "jaRk781?";
-        $dbname = "web277_sangalinem";
+        $servername = " ";
+        $username = " ";
+        $password = " ?";
+        $dbname = " ";
         
         // Create connection
         $conn = mysqli_connect($servername, $username, $password, $dbname);
