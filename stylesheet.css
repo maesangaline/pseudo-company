@@ -1,0 +1,467 @@
+/* Body */
+* {
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+html, body {
+    width: 100%;
+    margin: 0;
+    background: white; 
+    background-repeat: no-repeat;
+    color: #F4F2F3;
+}
+
+#container {
+    margin: 15px;
+    padding: 2px;
+    border-radius: 1rem;
+    background-color: white; ;
+}
+
+/* JavaScript Modal */
+
+#popupDiv {
+    font-family: 'Fira Sans', sans-serif;
+    background-color:white;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top:100px; 
+    left:35%; 
+    padding: 30px;
+    width:750px; 
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+.divform {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.divform input[type=email],input[type=text] {
+    font-family: 'Fira Sans', sans-serif;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.divform .modalbtn {
+    background-color: #443850;
+    width: 100%;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+  .divform .modalbtn:hover, open-button:hover {
+    opacity: 1;
+    }
+
+.close {
+    color: #443850;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        }
+
+/* Headings */
+h1 {
+    font-family: 'Libre Baskerville', serif;
+    margin:25px;
+    color: #969696;
+}
+
+h2 {
+    font-family: 'Fira Sans', sans-serif;
+    margin:50px;
+    color:#443850;
+    text-transform: uppercase;
+}
+
+h3 {
+        font-family: 'Libre Baskerville', serif;
+        margin:25px;
+        color: #969696;
+}
+
+/* Hero Image */
+.hero-image {
+    background-image: url("images/planning.jpg");
+    height: 500px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.detail-image {
+    background-image: url("images/staying-home.png");
+    height:500px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.about-image {
+    background-image: url("images/windows-ui.png");
+    height: 500px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.example-image {
+    background-image: url("images/giant-phone.png");
+    height: 500px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.find-us-image {
+    background-image: url("images/map.png");
+    height: 500px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+
+}
+
+
+.hero-text {
+    text-align: left;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Divs */
+.div-container {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    padding: 2px;
+    border-radius: 1rem;
+}
+
+.div-card {
+
+    width: 23.5%;
+    background: white;
+    box-shadow: 1px 2px 10px #33333352;
+    padding: 1rem;
+    margin: 0.5rem 0.4%;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1024px) {
+    .div-container { 
+                display:inline-block;
+                width: 90%;
+                }
+}
+
+@media only screen and (max-width: 1280px) {
+    .div-card { width: 100%; }
+}
+
+@media only screen and (max-width: 600px){
+    .div-card { width: 100%; }
+}
+
+@media only screen and (max-width: 479px){
+    .div-card { width: 100%; }
+}
+
+
+.div-card img {
+    width: 100%;
+    height: auto;
+	margin-bottom: 0.8rem;
+    border-radius: 1rem;
+}
+
+.div-card img:hover {
+    -moz-transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	-o-transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	transform: rotate(5deg);
+}
+
+.div-card h3 {
+    color: #443850;
+    margin-bottom: 0.5rem;
+}
+.div-card p {
+    font-size: 0.8rem;
+    color: #969696;
+    margin-bottom: 0;
+}
+
+/* Bold / Underline / Italics / Ahrefs*/
+
+b {
+    font-weight: 700;
+    font-size:larger;
+    color: darkslateblue;
+}
+
+u {
+    text-decoration: none;
+    border-bottom: 2px solid fuchsia;
+}
+
+i {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+}
+
+
+/* Paragraph / Section / Article / Blockquote*/
+p {
+    font-family: 'Fira Sans', sans-serif;
+    color: #525252;
+    margin: 50px;
+}
+
+blockquote {
+    border-left: 3px solid #443850;
+    color: #969696;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.25em;
+    font-style: italic;
+    margin: 1.1em;
+    padding: 1em 2em;
+    position: relative;
+}
+
+section {
+    display:block;
+    margin: 20px;
+    padding: 10px;
+}
+.details-one {
+    background-color:pink;
+}
+
+.details-two {
+    background-color:aquamarine;
+}
+
+/* Tables */
+
+table{
+    position: relative;
+    padding-bottom: 50px;
+    margin: 100px;
+}
+
+th, td {
+    color: #443850;
+    font-size: x-large;
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #969696;
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: -ms-flexbox;
+	-ms-flex-direction: column;
+	-ms-flex-wrap: wrap;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery {
+    position: static;
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* OL / LI */
+
+ul {
+    color: #0A141F;
+    margin: 30px;
+}
+
+/* Navigation */
+nav {
+    margin: 0px;
+    height: 100px;
+    overflow: hidden;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+nav ul {
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+
+nav > ul > li > a {
+    color: #B4A7AD;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+
+nav li a:visited {
+    color: #B4A7AD;
+}
+
+nav li a:hover {
+    color: #443850;
+    font-weight: strong;
+    transition: .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+nav li a:active {
+    color: #F4F2F3;
+}
+
+.left-nav {
+    float: left;
+    padding: 25px;
+}
+
+.right-nav {
+    float: right;
+    padding: 25px;
+}
+
+.search-input[type=text] {
+    padding: 10px;
+    color: #F4F2F3;
+    font-size: 16px;
+    background: #F4F2F3;
+    color: #0A141F;
+    border: 1px solid #0A141F;
+}
+
+.search-button {
+    float: right;
+    padding: 10px;
+    font-size: 16px;
+    background: #443850;
+    color: #F4F2F3;
+    border: 1px solid #0A141F;
+    border-left: none;
+    cursor: pointer;
+}
+
+.search-form::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* Images */
+
+.target-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+/* Footer */
+.signuptext[type=text] {
+    background: transparent;
+    float: left;
+    width: 15%;
+    padding: 14px 20px;
+    margin: 8px 10px;
+    outline: none;
+    border: none;
+    color: #525252;
+    border-bottom: #525252 solid 1px;
+  }
+  
+.signuptext[type=text]:focus {
+      outline: none;
+    }
+
+.signupbtn {
+    float: left;
+    background-color: #443850;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 8px 0 0 8px;
+    cursor: pointer;
+    width: 10%;
+    opacity: 0.9;
+  }
+  
+.signupbtn:hover {
+    opacity:1;
+  }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+footer {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: #B4A7AD;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+/* Web 277 Project, Spring 2021
+Mae Sangaline
+
+Color palette
+0A141F - Rich Black
+283F44 - Outer Space Crayola
+F4F2F3 - Cultured
+B4A7AD - Black Shadows
+443850 - English Violet
+969696 - Spanish Gray
+525252 - Davys Grey
+*/
